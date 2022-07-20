@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="checkout.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="" id="checkout">
+        <div class="alert">Order sent!</div>
+
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" id="fullname" placeholder="Enter full name" />
+
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="text" id="email" placeholder="example@gmail.com" />
+
+                </div>
+                <div class="inputBox">
+                    <span>Province :</span>
+                    <input type="text" id="province" placeholder="Enter Province" />
+
+                </div>
+                <div class="inputBox">
+                    <span>City/Municipality :</span>
+                    <input type="text" id="city" placeholder="Enter City/Municipality" />
+
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Barangay :</span>
+                        <input type="text" id="barangay" placeholder="Enter Barangay" />
+
+                    </div>
+                    <div class="inputBox">
+                        <span>Zip code :</span>
+                        <input type="text" id="zipcode" placeholder="Enter Zip code" />
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>Paymet Method:</span>
+                    <img src="images/gcash.webp"> 
+                    <img src="images/cod.webp">
+                </div>
+                <h3 class="title">delivery</h3>
+
+                <div class="inputBox">
+                    <span>Delivery Method:</span>
+                    <img src="images/gogox-logo.png"> 
+                    <img src="images/j&t-logo.png">
+                </div>
+                <div class="inputBox">
+                    <span>Contact Number :</span>
+                    <input type="text" id="num" placeholder="09XX-XXX-XXXX" />
+
+                </div>
+                <div class="inputBox">
+                    <span>Delivery:</span>
+                    <input type="text" id="delivery" placeholder="Gogo / J&T" />
+
+                </div>
+                <div class="inputBox">
+                    <span>Cash on Delivery</span>
+                    <input type="text" id="cod" placeholder="Yes/No" />
+
+                </div>
+
+
+            </div>
+    
+        </div>
+
+        <button type="submit">Submit</button>
+
+
+    </form>
+
+</div>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="checkout.js"></script>
+    
+</body>
+</html>
